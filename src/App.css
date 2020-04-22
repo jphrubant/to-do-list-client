@@ -1,0 +1,388 @@
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  background-color: floralwhite;
+  margin-bottom: 100px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+.App {
+  text-align: center;
+}
+
+/* ELEMENTS */
+
+a {
+  color: floralwhite;
+  text-decoration: none;
+}
+
+p {
+  margin: 5px;
+}
+
+hr {
+  width: 75%;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+input {
+  border: 1px solid #B09E9F;
+  border-radius: 5px;
+  height: 25px;
+  font-size: 20px;
+  color: #635A5A;
+  width: 150px;
+  margin: 5px;
+}
+
+textarea {
+  font-family: 'IBM Plex Sans', sans-serif;
+  border: 1px solid #B09E9F;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #635A5A;
+  width: 150px;
+  margin: 5px;
+}
+
+label {
+  margin: 5px;
+}
+
+span {
+  text-decoration: underline;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: #FC6367;
+  color: floralwhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo-div {
+  justify-content: flex-start;
+  margin-left: 8px;
+  padding: 5px;
+  font-size: 25px;
+  color: floralwhite;
+  text-decoration: underline;
+}
+
+.auth-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+}
+
+.nav-button { 
+  font-size: 20px;
+  color: floralwhite;
+  border: 1px solid floralwhite;
+  background-color: #FC6367;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.logo-div:hover {
+  border: 1px solid floralwhite;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+/* HOMEPAGE */
+
+.section-div {
+  margin-top: 50px;
+  color: #635A5A;
+  padding: 0 25px 0 25px;
+}
+
+.home-paragraph {
+  margin-top: 100px;
+}
+
+.title {
+  margin: 20px;
+  font-size: 30px;
+}
+
+/* TASK MANAGER */
+
+.toggle-div {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-button {
+  border: none;
+  width: 45%;
+  font-size: 20px;
+  color: floralwhite;
+  background-color: #FC6367;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.task-card {
+  border: 1px solid #B09E9F;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.task-item {
+  padding: 5px;
+  line-height: 1.2;
+}
+
+.task-item-title {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.task-item-date {
+  font-size: 15px;
+}
+
+.task-button {
+  border: none;
+  font-size: 20px;
+  color: floralwhite;
+  background-color: #B09E9F;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  width: 40%;
+}
+
+.add-button {
+  border: none;
+  font-size: 20px;
+  color: floralwhite;
+  background-color: #B09E9F;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  width: 50%;
+}
+
+.delete-button {
+  border: none;
+  font-size: 20px;
+  color: floralwhite;
+  background-color: #665050;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  width: 40%;
+}
+
+/* AUTH */
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 5px;
+}
+
+.submit-button {
+  border: none;
+  width: 250px;
+  font-size: 20px;
+  color: floralwhite;
+  background-color: #FC6367;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 30px;
+}
+
+.form-validation {
+  font-size: 15px;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #FC6367;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 8px 0 8px;
+}
+
+.credits {
+  font-size: 18px;
+  color: floralwhite;
+}
+
+@media only screen and (min-width: 600px) {
+  .task-card{
+    margin: 10px 60px;
+  }
+
+  hr { 
+    width: 70%
+  }
+
+  .toggle-button {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .task-card{
+    margin: 10px 110px;
+  }
+
+  hr { 
+    width: 65%
+  }
+
+  .add-button {
+    width: 45%;
+  }
+
+  .toggle-button {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .task-card{
+    margin: 10px 160px;
+  }
+
+  hr { 
+    width: 60%
+  }
+
+  .add-button {
+    width: 40%;
+  }
+
+  .toggle-button {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .task-card{
+    margin: 10px 210px;
+  }
+
+  hr { 
+    width: 55%
+  }
+
+  .add-button {
+    width: 35%;
+  }
+
+  .toggle-button {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .task-card{
+    margin: 10px 260px;
+  }
+
+  hr { 
+    width: 50%
+  }
+
+  .add-button {
+    width: 30%;
+  }
+
+  .toggle-button {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .task-card{
+    margin: 10px 310px;
+  }
+
+  hr { 
+    width: 45%
+  }
+
+  .add-button {
+    width: 25%;
+  }
+
+  .toggle-button {
+    width: 15%;
+  }
+}
